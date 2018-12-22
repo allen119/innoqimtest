@@ -1,16 +1,16 @@
 pipeline {
    agent any
    stages {
-     stage('Build and Test') {
+     stage('Test') {
         steps {
-            sh 'build here...'
-            sh 'run tests here if you like ...'
+        sh 'make check || true' 
         }
      }
    }
 
    post {
       always {
+        sh 'make check || true' 
         junit '**/reports/TEST-*.xml'
       }
    } 
