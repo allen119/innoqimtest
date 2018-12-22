@@ -1,15 +1,17 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('Test') {
-            steps {
-                /* `make check` returns non-zero on test failures,
-                * using `true` to allow the Pipeline to continue nonetheless
-                */
-                sh 'make check || true' 
-                junit '**/reports/TEST-*.xml' 
-            }
+   agent any
+   stages {
+     stage('Build and Test') {
+        steps {
+            sh 'build here...'
+            sh 'run tests here if you like ...'
         }
-    }
+     }
+   }
+
+   post {
+      always {
+        junit '**/reports/TEST-*.xml'
+      }
+   } 
 }
