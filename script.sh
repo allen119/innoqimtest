@@ -1,0 +1,1 @@
+echo "hello, Jekinsfile from com.innoqim.haitao"
