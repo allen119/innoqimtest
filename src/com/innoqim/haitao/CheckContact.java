@@ -22,7 +22,8 @@ public class CheckContact {
 		
 		driver.get("http://www.innoqim.com/contact.html");
 		
-		//fill 
+		//fill out    
+		//clear the space or not? clear()
 		driver.findElement(By.name("name")).sendKeys("username");
 		driver.findElement(By.name("email")).sendKeys("address@email.com");
 		driver.findElement(By.name("tel")).sendKeys("5191111111");
