@@ -1,6 +1,5 @@
 package com.innoqim.haitao;
 
-import static org.junit.Assert.*;
 
 import java.util.Objects;
 
@@ -9,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static junit.framework.TestCase.assertTrue;
+
 public class CheckContact {
 	
 	//Declare a Webdriver variable
@@ -16,7 +17,7 @@ public class CheckContact {
 	
 	@Test
 	public void testContactByChrome() {   
-		System.setProperty("webdriver.chrome.driver","/Users/haitao/util/chromedriver");   
+		System.setProperty("webdriver.chrome.driver","/Users/peter/util/chromedriver");
 
 		driver = new ChromeDriver();    
 		

@@ -17,7 +17,7 @@ public class CheckLogin {
 	
 	@Test
 	public void testLoginByChrome() {   
-		System.setProperty("webdriver.chrome.driver","/Users/haitao/util/chromedriver");   
+		System.setProperty("webdriver.chrome.driver","/Users/peter/util/chromedriver");
 
 		driver = new ChromeDriver();    
 		

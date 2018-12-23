@@ -28,7 +28,7 @@ public class CheckInnoqimHomepage {
 	public void testHomepageByChrome() {   
 
 		//specify chromedriver location.   
-		System.setProperty("webdriver.chrome.driver","/Users/haitao/util/chromedriver");   
+		System.setProperty("webdriver.chrome.driver","/Users/peter/util/chromedriver");
 
 		driver = new ChromeDriver();    
 		
@@ -50,7 +50,7 @@ public class CheckInnoqimHomepage {
 	public void testHomepageByFirefox() {   
 
 		//specify geckodriver location.   
-		System.setProperty("webdriver.gecko.driver","/Users/haitao/util/geckodriver");   
+		System.setProperty("webdriver.gecko.driver","/Users/peter/util/geckodriver");
 
 		driver = new FirefoxDriver();    
 		
